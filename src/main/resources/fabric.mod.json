@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "usefulcopper",
+	"version": "${version}",
+	"name": "UsefulCopper",
+	"description": "Useful Copper by Matthew. This mod brings you new copper tools and armor to your early game",
+	"authors": [
+		"Matthew Marchetti"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/usefulcopper/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.matthew.usefulcopper.UsefulCopper"
+		],
+		"fabric-datagen": [
+			"net.matthew.usefulcopper.UsefulCopperDataGenerator"
+		],
+		"client": [
+			"net.matthew.usefulcopper.UsefulCopperClient"
+		]
+	},
+	"mixins": [
+		"usefulcopper.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
